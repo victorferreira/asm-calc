@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-main() {
-
+int readFile() {
   FILE *fp;
 
   fp = fopen("src/file.txt", "r");
@@ -22,4 +21,12 @@ main() {
   puts("End of file reached successfully");
 
   fclose(fp);
+  return 0;
+}
+
+int main(int argc, char const *argv[]) {
+
+  readFile();
+
+  return 0;
 }
