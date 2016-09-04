@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int readFile() {
-  FILE *fp;
+int readFile(FILE* fp) {
 
   fp = fopen("src/file.txt", "r");
   if(!fp) {
@@ -25,8 +24,10 @@ int readFile() {
 }
 
 int main(int argc, char const *argv[]) {
-
-  readFile();
+  FILE *fp;
+  if(!readFile(&fp)) {
+    return 1;
+  }
 
   return 0;
 }
