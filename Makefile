@@ -1,8 +1,8 @@
 all:
 
-run: src/main.c
-	cc -o build/main src/main.c
-	./build/main
+run: src/calc.c
+	cc -o build/calc src/calc.c
+	./build/calc
 
 cpuid: src/cpuid.s
 	as -o cpuid.o src/cpuid.s
