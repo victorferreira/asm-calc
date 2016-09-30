@@ -47,6 +47,8 @@ void checkCharacter(char character) {
 
 int readFile(FILE* fp) {
 
+  char* line;
+
   fp = fopen("src/file.txt", "r");
   if(!fp) {
     perror("File opening failed");
@@ -57,7 +59,12 @@ int readFile(FILE* fp) {
   while ((c = fgetc(fp)) != EOF) { // standard C I/O file reading loop
     // putchar(c);
     checkCharacter(c);
+    while (c != "\n") {
+      line += c;
+    }
   }
+
+  // printf("%s\n", line);
 
   // printf("%d New lines\n", newLine);
   printTokens();
