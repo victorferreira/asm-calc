@@ -1,1 +1,1 @@
-{"virtualbox":{"/vagrant_data":{"guestpath":"/vagrant_data","hostpath":"/Users/victorferreira/projects/asm-calc","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/victorferreira/projects/asm-calc","disabled":false,"__vagrantfile":true}}}
+{"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/victorferreira/projects/asm-calc","disabled":false,"__vagrantfile":true}}}
